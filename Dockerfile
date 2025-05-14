@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN curl -LsSf https://astral.sh/uv/install.sh | env UV_INSTALL_DIR="/usr/local/bin" sh
 
 WORKDIR /app
-EXPOSE 8000
+EXPOSE 8001
 
 ENTRYPOINT ["uvx", "mcpo"]
 CMD ["--config", "/app/config.json"]
