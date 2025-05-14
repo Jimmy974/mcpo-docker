@@ -20,4 +20,4 @@ WORKDIR /app
 EXPOSE 8001
 
 ENTRYPOINT ["uvx", "mcpo"]
-CMD ["--config", "/app/config.json"]
+CMD ["--config", "/app/config.json", "--port", "8001"]
